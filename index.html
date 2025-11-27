@@ -48,6 +48,97 @@
             text-align: center;
         }
 
+        .summary-table {
+            width: 100%;
+            margin: 32px 0;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+        }
+
+        .summary-table th {
+            padding: 12px 8px;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+            color: white;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .summary-table th:last-child {
+            border-right: none;
+        }
+
+        .summary-table td {
+            padding: 10px 8px;
+            font-size: 13px;
+            text-align: center;
+            border-right: 1px solid rgba(55, 53, 47, 0.09);
+            border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+        }
+
+        .summary-table td:last-child {
+            border-right: none;
+        }
+
+        .summary-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .group-color-a { background: #e74c3c; }
+        .group-color-b { background: #3498db; }
+        .group-color-c { background: #27ae60; }
+        .group-color-d { background: #f39c12; }
+        .group-color-e { background: #9b59b6; }
+        .group-color-f { background: #16a085; }
+        .group-color-g { background: #c0392b; }
+        .group-color-h { background: #2980b9; }
+
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #f39c12;
+            padding: 16px 20px;
+            margin: 24px 0;
+            border-radius: 4px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .appendix {
+            margin-top: 48px;
+            padding: 32px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+        }
+
+        .appendix h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #37352f;
+        }
+
+        .appendix ol {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        .appendix li {
+            margin-bottom: 16px;
+        }
+
+        .appendix strong {
+            color: #2eaadc;
+        }
+
+        .appendix ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
         .group {
             margin-bottom: 48px;
             background: white;
@@ -168,13 +259,95 @@
     <div class="container">
         <div class="banner">
             <h1>2025-26 UTR Doubles League (Crystal)</h1>
-            <div class="subtitle">48 teams in total (8 groups)</div>
+            <div class="subtitle">48 teams in total (8 flights)</div>
+        </div>
+
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th class="group-color-a">Flight A</th>
+                    <th class="group-color-b">Flight B</th>
+                    <th class="group-color-c">Flight C</th>
+                    <th class="group-color-d">Flight D</th>
+                    <th class="group-color-e">Flight E</th>
+                    <th class="group-color-f">Flight F</th>
+                    <th class="group-color-g">Flight G</th>
+                    <th class="group-color-h">Flight H</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kai Shuanglong *</td>
+                    <td>Yangmei Hurjane Xinyi *</td>
+                    <td>Andrew Luca *</td>
+                    <td>No more dropshots *</td>
+                    <td>Ryan Nathan *</td>
+                    <td>wan more point *</td>
+                    <td>🍵Matcha Point🎾</td>
+                    <td>爆浆蛋挞</td>
+                </tr>
+                <tr>
+                    <td>Sunny Opal</td>
+                    <td>你说的都队</td>
+                    <td>Cosmic Ball Kinetics</td>
+                    <td>Chaoqun Mengjiao</td>
+                    <td>中早鸟</td>
+                    <td>BCSC Squad</td>
+                    <td>Clawitzer</td>
+                    <td>Ken Sam</td>
+                </tr>
+                <tr>
+                    <td>Triple Play</td>
+                    <td>Funsports</td>
+                    <td>Busy Beavers</td>
+                    <td>Blackbird</td>
+                    <td>Xiaocen Kevin</td>
+                    <td>Jay Julie</td>
+                    <td>Tennis4Fun</td>
+                    <td>五五开</td>
+                </tr>
+                <tr>
+                    <td>Jason Jason</td>
+                    <td>球饭搭子</td>
+                    <td>Squid Up</td>
+                    <td>小宇宙</td>
+                    <td>Puhe Runa</td>
+                    <td>JY Team</td>
+                    <td>7PP</td>
+                    <td>山草</td>
+                </tr>
+                <tr>
+                    <td>Alicia Hantian</td>
+                    <td>Shu-Chai Family</td>
+                    <td>Kenneth Brighton</td>
+                    <td>2 hour commute</td>
+                    <td>Harley</td>
+                    <td>Boba</td>
+                    <td>普通正手</td>
+                    <td>全员NFP</td>
+                </tr>
+                <tr>
+                    <td>Lucky to have you</td>
+                    <td>Jack Mac</td>
+                    <td>Joey Hector</td>
+                    <td>Chengyu Xinmeng Jieying Zhen</td>
+                    <td>Alpha</td>
+                    <td>Golden Egg</td>
+                    <td>Chong Vatsav</td>
+                    <td>Superpower</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="note">
+            <strong>*</strong> 标注的team表明 - 目前注册球员的任意一对分数组合都超过upper cap (9)，如果小组赛打完仍然超cap，赛季中期会被bump到银组以不影响淘汰赛公平性
         </div>
 
         <div class="group">
             <div class="group-header">
                 <span class="group-icon">🎾</span>
-                <span class="group-title">Group A</span>
+                <span class="group-title">Flight A</span>
                 <span class="group-count">6 teams</span>
             </div>
             <table>
@@ -190,10 +363,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class='team-name'>Andrew Luca <span class='asterisk'>*</span></td>
-                        <td><span class='score-badge'>9.39</span></td>
-                        <td class='player-cell'>Andrew Liu (6.00)</td>
-                        <td class='player-cell'>Luca Liu (3.39)</td>
+                        <td class='team-name'>Kai Shuanglong <span class='asterisk'>*</span></td>
+                        <td><span class='score-badge'>9.16</span></td>
+                        <td class='player-cell'>Shuanglong Zhang (5.04)</td>
+                        <td class='player-cell'>Kai He (4.12)</td>
                         <td class='player-cell'>—</td>
                         <td class='player-cell'>—</td>
                     </tr>
@@ -206,18 +379,18 @@
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>中早鸟</td>
-                        <td><span class='score-badge'>8.69</span></td>
-                        <td class='player-cell'>Qing Feng (5.80)</td>
-                        <td class='player-cell'>Bo Dong (4.88)</td>
-                        <td class='player-cell'>Lucy Pan (3.26)</td>
-                        <td class='player-cell'>Yang Yang (2.89)</td>
+                        <td class='team-name'>Triple Play</td>
+                        <td><span class='score-badge'>8.74</span></td>
+                        <td class='player-cell'>Kyle Wu (5.66)</td>
+                        <td class='player-cell'>Stephanie Li (4.45)</td>
+                        <td class='player-cell'>Terry Chang (4.29)</td>
+                        <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>小宇宙</td>
-                        <td><span class='score-badge'>8.47</span></td>
-                        <td class='player-cell'>Mengzhou Yao (4.36)</td>
-                        <td class='player-cell'>Zhenyu Wang (4.11)</td>
+                        <td class='team-name'>Jason Jason</td>
+                        <td><span class='score-badge'>8.26</span></td>
+                        <td class='player-cell'>Jason Feng (4.19)</td>
+                        <td class='player-cell'>Jason Zhang (4.07)</td>
                         <td class='player-cell'>—</td>
                         <td class='player-cell'>—</td>
                     </tr>
@@ -244,7 +417,7 @@
         <div class="group">
             <div class="group-header">
                 <span class="group-icon">🎾</span>
-                <span class="group-title">Group B</span>
+                <span class="group-title">Flight B</span>
                 <span class="group-count">6 teams</span>
             </div>
             <table>
@@ -260,12 +433,12 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class='team-name'>Kai Shuanglong <span class='asterisk'>*</span></td>
-                        <td><span class='score-badge'>9.16</span></td>
-                        <td class='player-cell'>Shuanglong Zhang (5.04)</td>
-                        <td class='player-cell'>Kai He (4.12)</td>
-                        <td class='player-cell'>—</td>
-                        <td class='player-cell'>—</td>
+                        <td class='team-name'>Yangmei Hurjane Xinyi <span class='asterisk'>*</span></td>
+                        <td><span class='score-badge'>9.93</span></td>
+                        <td class='player-cell'>Yangmei Zheng (5.13)</td>
+                        <td class='player-cell'>Chunguang He (4.80)</td>
+                        <td class='player-cell'>Xinyi Ren (4.79)</td>
+                        <td class='player-cell'>Hurjane Vongsachang (4.66)</td>
                     </tr>
                     <tr>
                         <td class='team-name'>你说的都队</td>
@@ -284,27 +457,27 @@
                         <td class='player-cell'>Solomon Wang (1.92)</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Squid Up</td>
-                        <td><span class='score-badge'>8.24</span></td>
-                        <td class='player-cell'>Yubo Ouyang (5.85)</td>
-                        <td class='player-cell'>Huanxin Ding (2.39)</td>
-                        <td class='player-cell'>—</td>
+                        <td class='team-name'>球饭搭子</td>
+                        <td><span class='score-badge'>8.47</span></td>
+                        <td class='player-cell'>Wei Jing (6.37)</td>
+                        <td class='player-cell'>Yi Cui (2.10)</td>
+                        <td class='player-cell'>Wen Lin (1.51)</td>
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>2 hour commute</td>
+                        <td class='team-name'>Shu-Chai Family</td>
                         <td><span class='score-badge'>7.98</span></td>
-                        <td class='player-cell'>Xizhe Li (4.98)</td>
-                        <td class='player-cell'>Chao Zhou (4.64)</td>
-                        <td class='player-cell'>Na Xie (3.0)</td>
+                        <td class='player-cell'>Terrence Shu (4.58)</td>
+                        <td class='player-cell'>Lei Chai (3.40)</td>
+                        <td class='player-cell'>—</td>
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Harley</td>
-                        <td><span class='score-badge'>7.21</span></td>
-                        <td class='player-cell'>Yurong Chen (3.86)</td>
-                        <td class='player-cell'>Anna An (3.35)</td>
-                        <td class='player-cell'>Darren Mo (3.0)</td>
+                        <td class='team-name'>Jack Mac</td>
+                        <td><span class='score-badge'>7.84</span></td>
+                        <td class='player-cell'>Mac Ya (4.84)</td>
+                        <td class='player-cell'>Jack Liu (3.0)</td>
+                        <td class='player-cell'>—</td>
                         <td class='player-cell'>—</td>
                     </tr>
                 </tbody>
@@ -314,7 +487,77 @@
         <div class="group">
             <div class="group-header">
                 <span class="group-icon">🎾</span>
-                <span class="group-title">Group C</span>
+                <span class="group-title">Flight C</span>
+                <span class="group-count">6 teams</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Team Name</th>
+                        <th>Max Combined Score (≤9)</th>
+                        <th>Highest UTR Player</th>
+                        <th>2nd Highest</th>
+                        <th>3rd Highest</th>
+                        <th>4th Highest</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class='team-name'>Andrew Luca <span class='asterisk'>*</span></td>
+                        <td><span class='score-badge'>9.39</span></td>
+                        <td class='player-cell'>Andrew Liu (6.00)</td>
+                        <td class='player-cell'>Luca Liu (3.39)</td>
+                        <td class='player-cell'>—</td>
+                        <td class='player-cell'>—</td>
+                    </tr>
+                    <tr>
+                        <td class='team-name'>Cosmic Ball Kinetics</td>
+                        <td><span class='score-badge'>8.92</span></td>
+                        <td class='player-cell'>Bowen She (4.94)</td>
+                        <td class='player-cell'>Tony Zhang (4.40)</td>
+                        <td class='player-cell'>Kaining Mao (4.18)</td>
+                        <td class='player-cell'>Chuanxi Zhang (3.98)</td>
+                    </tr>
+                    <tr>
+                        <td class='team-name'>Busy Beavers</td>
+                        <td><span class='score-badge'>8.64</span></td>
+                        <td class='player-cell'>Gary Chen (6.18)</td>
+                        <td class='player-cell'>Weiwei Meng (2.46)</td>
+                        <td class='player-cell'>—</td>
+                        <td class='player-cell'>—</td>
+                    </tr>
+                    <tr>
+                        <td class='team-name'>Squid Up</td>
+                        <td><span class='score-badge'>8.24</span></td>
+                        <td class='player-cell'>Yubo Ouyang (5.85)</td>
+                        <td class='player-cell'>Huanxin Ding (2.39)</td>
+                        <td class='player-cell'>—</td>
+                        <td class='player-cell'>—</td>
+                    </tr>
+                    <tr>
+                        <td class='team-name'>Kenneth Brighton</td>
+                        <td><span class='score-badge'>7.97</span></td>
+                        <td class='player-cell'>Kenneth Kai Zeng (4.02)</td>
+                        <td class='player-cell'>Brighton Vino Jegarajan (3.95)</td>
+                        <td class='player-cell'>—</td>
+                        <td class='player-cell'>—</td>
+                    </tr>
+                    <tr>
+                        <td class='team-name'>Joey Hector</td>
+                        <td><span class='score-badge'>7.01</span></td>
+                        <td class='player-cell'>Hector Zhao (4.01)</td>
+                        <td class='player-cell'>Joey Jin (3.00)</td>
+                        <td class='player-cell'>—</td>
+                        <td class='player-cell'>—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="group">
+            <div class="group-header">
+                <span class="group-icon">🎾</span>
+                <span class="group-title">Flight D</span>
                 <span class="group-count">6 teams</span>
             </div>
             <table>
@@ -346,27 +589,27 @@
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Tennis4Fun</td>
-                        <td><span class='score-badge'>8.66</span></td>
-                        <td class='player-cell'>Bin Wan (6.25)</td>
-                        <td class='player-cell'>Bin Li (2.41)</td>
+                        <td class='team-name'>Blackbird</td>
+                        <td><span class='score-badge'>8.50</span></td>
+                        <td class='player-cell'>Xintian Lin (4.66)</td>
+                        <td class='player-cell'>Carl Lin (3.84)</td>
                         <td class='player-cell'>—</td>
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Puhe Runa</td>
-                        <td><span class='score-badge'>8.33</span></td>
-                        <td class='player-cell'>Puhe Liang (4.23)</td>
-                        <td class='player-cell'>Runa Koizumi (4.10)</td>
+                        <td class='team-name'>小宇宙</td>
+                        <td><span class='score-badge'>8.47</span></td>
+                        <td class='player-cell'>Mengzhou Yao (4.36)</td>
+                        <td class='player-cell'>Zhenyu Wang (4.11)</td>
                         <td class='player-cell'>—</td>
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Kenneth Brighton</td>
-                        <td><span class='score-badge'>7.97</span></td>
-                        <td class='player-cell'>Kenneth Kai Zeng (4.02)</td>
-                        <td class='player-cell'>Brighton Vino Jegarajan (3.95)</td>
-                        <td class='player-cell'>—</td>
+                        <td class='team-name'>2 hour commute</td>
+                        <td><span class='score-badge'>7.98</span></td>
+                        <td class='player-cell'>Xizhe Li (4.98)</td>
+                        <td class='player-cell'>Chao Zhou (4.64)</td>
+                        <td class='player-cell'>Na Xie (3.0)</td>
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
@@ -384,7 +627,7 @@
         <div class="group">
             <div class="group-header">
                 <span class="group-icon">🎾</span>
-                <span class="group-title">Group D</span>
+                <span class="group-title">Flight E</span>
                 <span class="group-count">6 teams</span>
             </div>
             <table>
@@ -408,82 +651,12 @@
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>爆浆蛋挞</td>
-                        <td><span class='score-badge'>8.89</span></td>
-                        <td class='player-cell'>Guang Yang (5.78)</td>
-                        <td class='player-cell'>Ethan Sun (5.37)</td>
-                        <td class='player-cell'>Valerie Li (3.25)</td>
-                        <td class='player-cell'>Ko-Yun Chen (3.11)</td>
-                    </tr>
-                    <tr>
-                        <td class='team-name'>Busy Beavers</td>
-                        <td><span class='score-badge'>8.64</span></td>
-                        <td class='player-cell'>Gary Chen (6.18)</td>
-                        <td class='player-cell'>Weiwei Meng (2.46)</td>
-                        <td class='player-cell'>—</td>
-                        <td class='player-cell'>—</td>
-                    </tr>
-                    <tr>
-                        <td class='team-name'>球饭搭子</td>
-                        <td><span class='score-badge'>8.47</span></td>
-                        <td class='player-cell'>Wei Jing (6.37)</td>
-                        <td class='player-cell'>Yi Cui (2.10)</td>
-                        <td class='player-cell'>Wen Lin (1.51)</td>
-                        <td class='player-cell'>—</td>
-                    </tr>
-                    <tr>
-                        <td class='team-name'>Shu-Chai Family</td>
-                        <td><span class='score-badge'>7.98</span></td>
-                        <td class='player-cell'>Terrence Shu (4.58)</td>
-                        <td class='player-cell'>Lei Chai (3.40)</td>
-                        <td class='player-cell'>—</td>
-                        <td class='player-cell'>—</td>
-                    </tr>
-                    <tr>
-                        <td class='team-name'>Golden Egg</td>
-                        <td><span class='score-badge'>6.59</span></td>
-                        <td class='player-cell'>Jindan Xu (4.51)</td>
-                        <td class='player-cell'>Jiyu Zhou (2.08)</td>
-                        <td class='player-cell'>—</td>
-                        <td class='player-cell'>—</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="group">
-            <div class="group-header">
-                <span class="group-icon">🎾</span>
-                <span class="group-title">Group E</span>
-                <span class="group-count">6 teams</span>
-            </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Team Name</th>
-                        <th>Max Combined Score (≤9)</th>
-                        <th>Highest UTR Player</th>
-                        <th>2nd Highest</th>
-                        <th>3rd Highest</th>
-                        <th>4th Highest</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class='team-name'>Yangmei Hurjane Xinyi <span class='asterisk'>*</span></td>
-                        <td><span class='score-badge'>9.93</span></td>
-                        <td class='player-cell'>Yangmei Zheng (5.13)</td>
-                        <td class='player-cell'>Chunguang He (4.80)</td>
-                        <td class='player-cell'>Xinyi Ren (4.79)</td>
-                        <td class='player-cell'>Hurjane Vongsachang (4.66)</td>
-                    </tr>
-                    <tr>
-                        <td class='team-name'>BCSC Squad</td>
-                        <td><span class='score-badge'>8.79</span></td>
-                        <td class='player-cell'>Chih Wei Yang (5.21)</td>
-                        <td class='player-cell'>Louis Sheng (5.15)</td>
-                        <td class='player-cell'>Bokun Chen (4.66)</td>
-                        <td class='player-cell'>xiaoguo li (3.58)</td>
+                        <td class='team-name'>中早鸟</td>
+                        <td><span class='score-badge'>8.69</span></td>
+                        <td class='player-cell'>Qing Feng (5.80)</td>
+                        <td class='player-cell'>Bo Dong (4.88)</td>
+                        <td class='player-cell'>Lucy Pan (3.26)</td>
+                        <td class='player-cell'>Yang Yang (2.89)</td>
                     </tr>
                     <tr>
                         <td class='team-name'>Xiaocen Kevin</td>
@@ -494,27 +667,27 @@
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Jason Jason</td>
-                        <td><span class='score-badge'>8.26</span></td>
-                        <td class='player-cell'>Jason Feng (4.19)</td>
-                        <td class='player-cell'>Jason Zhang (4.07)</td>
+                        <td class='team-name'>Puhe Runa</td>
+                        <td><span class='score-badge'>8.33</span></td>
+                        <td class='player-cell'>Puhe Liang (4.23)</td>
+                        <td class='player-cell'>Runa Koizumi (4.10)</td>
                         <td class='player-cell'>—</td>
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Boba</td>
-                        <td><span class='score-badge'>7.54</span></td>
-                        <td class='player-cell'>Eddie Chen (3.77)</td>
-                        <td class='player-cell'>Jason Chuang (3.77)</td>
-                        <td class='player-cell'>—</td>
+                        <td class='team-name'>Harley</td>
+                        <td><span class='score-badge'>7.21</span></td>
+                        <td class='player-cell'>Yurong Chen (3.86)</td>
+                        <td class='player-cell'>Anna An (3.35)</td>
+                        <td class='player-cell'>Darren Mo (3.0)</td>
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Chong Vatsav</td>
-                        <td><span class='score-badge'>6.93</span></td>
-                        <td class='player-cell'>Vatsav Sethupathi (3.68)</td>
-                        <td class='player-cell'>Chong Yeo (3.25)</td>
-                        <td class='player-cell'>—</td>
+                        <td class='team-name'>Alpha</td>
+                        <td><span class='score-badge'>7.02</span></td>
+                        <td class='player-cell'>Bill Wei (6.03)</td>
+                        <td class='player-cell'>Jing Shi (3.59)</td>
+                        <td class='player-cell'>Lambda Ye (3.43)</td>
                         <td class='player-cell'>—</td>
                     </tr>
                 </tbody>
@@ -524,7 +697,7 @@
         <div class="group">
             <div class="group-header">
                 <span class="group-icon">🎾</span>
-                <span class="group-title">Group F</span>
+                <span class="group-title">Flight F</span>
                 <span class="group-count">6 teams</span>
             </div>
             <table>
@@ -548,18 +721,18 @@
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Clawitzer</td>
-                        <td><span class='score-badge'>8.88</span></td>
-                        <td class='player-cell'>Mo horthong (4.99)</td>
-                        <td class='player-cell'>Lan Kan (3.89)</td>
-                        <td class='player-cell'>Dorothy Yang (3.87)</td>
-                        <td class='player-cell'>—</td>
+                        <td class='team-name'>BCSC Squad</td>
+                        <td><span class='score-badge'>8.79</span></td>
+                        <td class='player-cell'>Chih Wei Yang (5.21)</td>
+                        <td class='player-cell'>Louis Sheng (5.15)</td>
+                        <td class='player-cell'>Bokun Chen (4.66)</td>
+                        <td class='player-cell'>xiaoguo li (3.58)</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Blackbird</td>
-                        <td><span class='score-badge'>8.50</span></td>
-                        <td class='player-cell'>Xintian Lin (4.66)</td>
-                        <td class='player-cell'>Carl Lin (3.84)</td>
+                        <td class='team-name'>Jay Julie</td>
+                        <td><span class='score-badge'>8.63</span></td>
+                        <td class='player-cell'>Jay Lin (5.87)</td>
+                        <td class='player-cell'>julie shi (2.76)</td>
                         <td class='player-cell'>—</td>
                         <td class='player-cell'>—</td>
                     </tr>
@@ -572,19 +745,19 @@
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>全员NFP</td>
-                        <td><span class='score-badge'>7.74</span></td>
-                        <td class='player-cell'>Zhuoqi Li (5.16)</td>
-                        <td class='player-cell'>Tianlun Liu (4.87)</td>
-                        <td class='player-cell'>Qin Zeng (2.58)</td>
-                        <td class='player-cell'>Ruoqi Gao (1.01)</td>
+                        <td class='team-name'>Boba</td>
+                        <td><span class='score-badge'>7.54</span></td>
+                        <td class='player-cell'>Eddie Chen (3.77)</td>
+                        <td class='player-cell'>Jason Chuang (3.77)</td>
+                        <td class='player-cell'>—</td>
+                        <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Alpha</td>
-                        <td><span class='score-badge'>7.02</span></td>
-                        <td class='player-cell'>Bill Wei (6.03)</td>
-                        <td class='player-cell'>Jing Shi (3.59)</td>
-                        <td class='player-cell'>Lambda Ye (3.43)</td>
+                        <td class='team-name'>Golden Egg</td>
+                        <td><span class='score-badge'>6.59</span></td>
+                        <td class='player-cell'>Jindan Xu (4.51)</td>
+                        <td class='player-cell'>Jiyu Zhou (2.08)</td>
+                        <td class='player-cell'>—</td>
                         <td class='player-cell'>—</td>
                     </tr>
                 </tbody>
@@ -594,7 +767,7 @@
         <div class="group">
             <div class="group-header">
                 <span class="group-icon">🎾</span>
-                <span class="group-title">Group G</span>
+                <span class="group-title">Flight G</span>
                 <span class="group-count">6 teams</span>
             </div>
             <table>
@@ -618,18 +791,18 @@
                         <td class='player-cell'>Xueying Shen (2.45)</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Triple Play</td>
-                        <td><span class='score-badge'>8.74</span></td>
-                        <td class='player-cell'>Kyle Wu (5.66)</td>
-                        <td class='player-cell'>Stephanie Li (4.45)</td>
-                        <td class='player-cell'>Terry Chang (4.29)</td>
+                        <td class='team-name'>Clawitzer</td>
+                        <td><span class='score-badge'>8.88</span></td>
+                        <td class='player-cell'>Mo horthong (4.99)</td>
+                        <td class='player-cell'>Lan Kan (3.89)</td>
+                        <td class='player-cell'>Dorothy Yang (3.87)</td>
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Jay Julie</td>
-                        <td><span class='score-badge'>8.63</span></td>
-                        <td class='player-cell'>Jay Lin (5.87)</td>
-                        <td class='player-cell'>julie shi (2.76)</td>
+                        <td class='team-name'>Tennis4Fun</td>
+                        <td><span class='score-badge'>8.66</span></td>
+                        <td class='player-cell'>Bin Wan (6.25)</td>
+                        <td class='player-cell'>Bin Li (2.41)</td>
                         <td class='player-cell'>—</td>
                         <td class='player-cell'>—</td>
                     </tr>
@@ -650,10 +823,10 @@
                         <td class='player-cell'>Oliver Qian (3.04)</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Superpower</td>
-                        <td><span class='score-badge'>6.82</span></td>
-                        <td class='player-cell'>Haitian Zheng (4.54)</td>
-                        <td class='player-cell'>Chen Ma (2.28)</td>
+                        <td class='team-name'>Chong Vatsav</td>
+                        <td><span class='score-badge'>6.93</span></td>
+                        <td class='player-cell'>Vatsav Sethupathi (3.68)</td>
+                        <td class='player-cell'>Chong Yeo (3.25)</td>
                         <td class='player-cell'>—</td>
                         <td class='player-cell'>—</td>
                     </tr>
@@ -664,7 +837,7 @@
         <div class="group">
             <div class="group-header">
                 <span class="group-icon">🎾</span>
-                <span class="group-title">Group H</span>
+                <span class="group-title">Flight H</span>
                 <span class="group-count">6 teams</span>
             </div>
             <table>
@@ -680,12 +853,12 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class='team-name'>Cosmic Ball Kinetics</td>
-                        <td><span class='score-badge'>8.92</span></td>
-                        <td class='player-cell'>Bowen She (4.94)</td>
-                        <td class='player-cell'>Tony Zhang (4.40)</td>
-                        <td class='player-cell'>Kaining Mao (4.18)</td>
-                        <td class='player-cell'>Chuanxi Zhang (3.98)</td>
+                        <td class='team-name'>爆浆蛋挞</td>
+                        <td><span class='score-badge'>8.89</span></td>
+                        <td class='player-cell'>Guang Yang (5.78)</td>
+                        <td class='player-cell'>Ethan Sun (5.37)</td>
+                        <td class='player-cell'>Valerie Li (3.25)</td>
+                        <td class='player-cell'>Ko-Yun Chen (3.11)</td>
                     </tr>
                     <tr>
                         <td class='team-name'>Ken Sam</td>
@@ -712,23 +885,50 @@
                         <td class='player-cell'>—</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Jack Mac</td>
-                        <td><span class='score-badge'>7.84</span></td>
-                        <td class='player-cell'>Mac Ya (4.84)</td>
-                        <td class='player-cell'>Jack Liu (3.0)</td>
-                        <td class='player-cell'>—</td>
-                        <td class='player-cell'>—</td>
+                        <td class='team-name'>全员NFP</td>
+                        <td><span class='score-badge'>7.74</span></td>
+                        <td class='player-cell'>Zhuoqi Li (5.16)</td>
+                        <td class='player-cell'>Tianlun Liu (4.87)</td>
+                        <td class='player-cell'>Qin Zeng (2.58)</td>
+                        <td class='player-cell'>Ruoqi Gao (1.01)</td>
                     </tr>
                     <tr>
-                        <td class='team-name'>Joey Hector</td>
-                        <td><span class='score-badge'>7.01</span></td>
-                        <td class='player-cell'>Hector Zhao (4.01)</td>
-                        <td class='player-cell'>Joey Jin (3.00)</td>
+                        <td class='team-name'>Superpower</td>
+                        <td><span class='score-badge'>6.82</span></td>
+                        <td class='player-cell'>Haitian Zheng (4.54)</td>
+                        <td class='player-cell'>Chen Ma (2.28)</td>
                         <td class='player-cell'>—</td>
                         <td class='player-cell'>—</td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+
+        <div class="appendix">
+            <h2>附录：分组算法说明</h2>
+            <ol>
+                <li>
+                    <strong>按评分排序</strong><br>
+                    根据每支队伍在目标区间（例如水晶 7–9 段）内能达到的最高组合分数，按从高到低排序
+                </li>
+                <li>
+                    <strong>每 6 支队伍为一组</strong><br>
+                    将排序后的 48 支队伍按顺序每 6 支分成一批，共 8 批
+                </li>
+                <li>
+                    <strong>把每批队伍随机分配到 8 个组（A–H）</strong><br>
+                    对每一批队伍：
+                    <ul>
+                        <li>随机把每支队伍分到 A–H 这 8 个组之一</li>
+                        <li><strong>限制条件：</strong>同一批里的队伍，同一个组最多只能放 1 支</li>
+                        <li>如果某组已经放了这一批的队伍，就换另一个组</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>重复直到所有队伍分完</strong><br>
+                    对所有批次重复以上步骤，直到 48 支队伍全部分配到 A–H 各组中
+                </li>
+            </ol>
         </div>
     </div>
 </body>
